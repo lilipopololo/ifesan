@@ -8,20 +8,18 @@
 
 <body>
     <script>
-        const MyApp = san.defineComponent({
-            template: `
-                <div>
-                    <input type="text" value="{=name=}">
-                    <p>Hello {{name}}!</p>
-                </div>
-            `
-        });
+        var MyApp = san.defineComponent({
+            template: '<p>Hello {{name}}!</p>',
 
-        let myApp = new MyApp({
-            data: {
-                name: 'San'
+            initData: function () {
+                return {
+                    name: 'San'
+                };
             }
         });
+
+
+        var myApp = new MyApp();
         myApp.attach(document.body);
     </script>
 </body>
