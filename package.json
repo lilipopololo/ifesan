@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/lilipopololo/ifesan/issues"
   },
-  "homepage": "https://github.com/lilipopololo/ifesan#readme"
+  "homepage": "https://github.com/lilipopololo/ifesan#readme",
+  "dependencies": {
+    "san": "^3.5.7"
+  }
 }
